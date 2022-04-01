@@ -17,7 +17,7 @@ class LoginForm(AuthenticationForm):
 
 class RegisterForm(UserCreationForm):
     class Meta:
-        model = ExamUser
+        model = KpkUser
         fields = ('name', 'surname', 'patronymic', 'email', 'login', 'password1', 'password2', 'rules')
 
     def __init__(self, *args, **kwargs):
